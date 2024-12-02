@@ -4,3 +4,14 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+actix-web = "4.9.0"
+env_logger = "0.11.5"
+serde = "1.0.215"
+serde_json = "1.0.132"
+dotenv = "0.15.0"
+lazy_static = "1.5.0"
+sea-orm = { version = "1.1.0", features = ["sqlx-postgres", "runtime-tokio-rustls", "macros"] }
+actix-web-actors = "4.3.1"
+sea-orm-migration = "1.1.2"
+tokio = "1.41.1"
+tokio-postgres = "0.7.12"
