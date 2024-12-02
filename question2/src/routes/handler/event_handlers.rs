@@ -8,6 +8,7 @@ use sea_orm::prelude::Uuid;
 use sea_orm::{EntityTrait, IntoActiveModel, Set};
 use serde::{Deserialize, Serialize};
 use sea_orm::ActiveModelTrait;
+use actix::ActorContext;
 
 
 #[derive(Deserialize, Serialize)]
