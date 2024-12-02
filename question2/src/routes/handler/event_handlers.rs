@@ -1,9 +1,13 @@
 use actix::{Actor, StreamHandler};
-use actix_web::{web, App, Error, HttpRequest, HttpResponse, Error};
+use actix_web::{web, App, Error, HttpRequest, HttpResponse};
 use actix_web_actors::ws;
 use sea_orm::{Database, EntityTrait, JsonValue};
 use serde::{Deserialize, Serialize};
 use std::time::Instant;
+use sea_orm::prelude::Uuid;
+use sea_orm::{EntityTrait, IntoActiveModel, Set};
+use serde::{Deserialize, Serialize};
+use sea_orm::ActiveModelTrait;
 
 
 #[derive(Deserialize, Serialize)]
